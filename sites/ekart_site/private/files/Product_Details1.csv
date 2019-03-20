@@ -1,0 +1,26 @@
+Data Import Template,,,,,,,,,,,
+Table:,Product Details,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Notes:,,,,,,,,,,,
+Please do not change the template headings.,,,,,,,,,,,
+First data column must be blank.,,,,,,,,,,,
+"If you are uploading new records, leave the ""name"" (ID) column blank.",,,,,,,,,,,
+"If you are uploading new records, ""Naming Series"" becomes mandatory, if present.",,,,,,,,,,,
+Only mandatory fields are necessary for new records. You can delete non-mandatory columns if you wish.,,,,,,,,,,,
+"For updating, you can update only selective columns.",,,,,,,,,,,
+You can only upload upto 5000 records in one go. (may be less in some cases),,,,,,,,,,,
+,,,,,,,,,,,
+DocType:,Product Details,,,,,,,,,,
+Column Labels:,Title,Product Code,Short Description,Brand,Price,Published,Currency,Weight,Description,Image,route
+Column Name:,title,product_code,short_description,brand,price,published,currency,weight,description,image,route
+Mandatory:,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No
+Type:,Data,Data,Data,Data,Currency,Check,Data,Data,Text,Attach Image,Data
+Info:,,,,,,0 or 1,,,,,
+Start entering data below this line,,,,,,,,,,,
+,Dal,1020,veg,dawat,35,,,,pulses,,
+,Nescafe Coffe,1001,Nescafe Coffee - Classic 100% pure natural coffee beans,Nescafe,240,,Rs.,2x100 gm,,,
+,Nutella Hazelnut Spread With Cocoa,1003,100% vegetarian and contains no preservatives,Nutella,570,,Rs.,250 grm,,,
+,Dairy Milk,1002,Milk Chocolate,Cadbury,20,,Rs.,23 grm,,,
+,Bombay Baida Roti - Mutton,1005,Non Vegetarian,KUZO,102,,Rs.,500 grm,,,
+,Golden Eggs,1004,"Golden Eggs Golden Eggs, 6 pcs",Golden Eggs,42,,Rs.,6 pcs,,,

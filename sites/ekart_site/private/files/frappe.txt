@@ -1,0 +1,244 @@
+https://discuss.erpnext.com/t/file-upload-from-portal-page/14800/3.  Upload file
+
+
+ubuntupassword: ubuntu1234
+usermod -aG sudo username
+sudo apt-get install python-minimal
+
+
+
+wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py
+sudo python install.py --develop
+
+
+
+
+MYSQL Password: password
+Administrator password: password
+https://github.com/frappe/frappe/wiki/The-Hitchhiker's-Guide-to-Installing-Frapp%C3%A9-on-Linux-OS
+
+bench new-app library
+bench new-app library_management
+App Title (defaut: Lib Mgt): Library Management
+App Description:  App for managing Articles, Members, Memberships and Transactions for Libraries
+App Publisher: Frappe
+App Email: info@frappe.io
+App Icon (default 'octicon octicon-file-directory'): octicon octicon-book
+App Color (default 'grey'): #589494
+App License (default 'MIT'): GNU General Public License
+
+bench new-site library
+password123
+bench use library
+bench --site library install-app library_management
+
+8000 port is being used by supervisor you will need to stop supervisor first and then try bench start
+try,
+sudo supervisorctl stop all
+
+npm install express
+bench setup redis
+bench start
+
+sudo apt-get install supervisor
+service supervisor restart
+
+bench start
+
+
+
+Hi, It looks like socketio is not installed. Go to the frappe-bench directory and execute: 
+sudo npm install socket.io redis express superagent cookie
+execute this and also execute bench clear-cache and bench clear-website-cache in your frappe-bench folder
+chalk error
+bench setup requirements
+
+https://github.com/frappe/bench/wiki/OS-and-Hardware-Specifications
+Hi @rmehta I am not asking to do my work just asking steps to handle the multiple site. Because i have to work directly with live projects. I have been tried with first creating the new sites, and set that sites in nginx port of 82 then i install erpnext in that site and view the web page it shows blank page.
+
+bench new-site vas
+bench set-nginx-port vas 82
+bench setup nginx
+frappe --install_app erpnext vas
+Now when I access localhost:8080 Works it’s in site1.local
+when I access Localhost:82 shows blank page
+now i want to access both the sites with erpnext.
+ekart
+ekart_site
+password
+
+
+
+https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=http%3A%2F%2F35.237.3.146%3A8000%2Fapi%2Fmethod%2Ffrappe.www.login.login_via_google&state=%7B"site"%3A+"http%3A%2F%2F35.237.3.146%3A8000"%2C+"token"%3A+"b9eebe816ff3d2bc01dba362aa158cc71a95af35889ca79eab0094f3"%7D&client_id=756486158663-i7omdjm9u6jir0o4lkt5ngktjqg1hd1a.apps.googleusercontent.com
+
+~/frappe-bench/apps/ekart/ekart/ekart/doctype/
+/product_details/templates
+
+sites/sitename/public/files
+~/frappe-bench/apps/frappe/frappe/utils
+~/frappe-bench/apps/frappe/frappe/www
+~/frappe-bench/apps/frappe/frappe/templates/includes/login
+~/frappe-bench/apps/frappe/frappe/public/js/frappe/ui
+
+
+https://discuss.erpnext.com/t/making-a-web-page-that-displays-a-doctypes-data/27133/14
+
+756486158663-i7omdjm9u6jir0o4lkt5ngktjqg1hd1a.apps.googleusercontent.com
+fIa0Z_kv0Mf0g8be5FZpUS5W
+
+
+Icons
+https://octicons.github.com/
+
+acdb112234
+
+
+http://35.231.75.43:8000/login#loginhttps://accounts.google.com/o/oauth2/v2/auth?redirect_uri=http%3A%2F%2F35.231.75.43%3A8000%2Fapi%2Fmethod%2Ffrappe.www.login.login_via_google&state=%7B%22site%22%3A+%22http%3A%2F%2F35.237.3.146%3A8000%22%2C+%22token%22%3A+%2210366f05f0bb6f0f2b007f2a511f7416c67c1330c571032e9a21ae44%22%7D&client_id=756486158663-i7omdjm9u6jir0o4lkt5ngktjqg1hd1a.apps.googleusercontent.com
+
+
+
+https://gitlab.com/Babita27/frappe.git
+
+bench --site site-name set-admin-password admin
+
+
+~/frappe/frappe-bench/apps/frappe/frappe/auth.py
+~/frappe-bench/apps/frappe/frappe/www/login.py
+~/frappe/frappe-bench/apps/frappe/frappe/www/login.html
+~/frappe/frappe-bench/apps/frappe/frappe/templates/includes/login/login.js
+~/frappe/frappe-bench/apps/frappe/frappe/public/js/frappe/ui/messages.js
+~/frappe/frappe-bench/apps/frappe/frappe/public/js/lib/jquery/jquery.min.js
+~/frappe/frappe-bench/apps/frappe/frappe/website/js/website.js
+
+Example: Find all files under /var/log that have been modified in the last 5 days, list them newest first.
+find /var/log -mtime -5 -type f -print0 | xargs -0 ls -al | sort -r +5
+
+bench --site <sitename> mysql
+bench --site <sitename> console . This will open up Python console for you. You can get and manipulate data there via the frappe database API
+-------------
+list
+
+
+
+debugging
+https://discuss.erpnext.com/t/debug-python-files-what-method-is-indicated-in-frappe/4822/10
+
+
+
+
+
+
+https://programtalk.com/python-examples/frappe.form_dict.doctype/
+
+ERPNEXT
+Password : 9uzSPNv9stcqUyg
+
+site name:  babita
+
+
+ekart.ekart.doctype.store_product.store_product.StoreProduct
+
+
+cur_frm.cscript.custom_validate = function(doc) {
+    // clear item_code (name is from item_code)
+    doc.title = doc.store.toString()+"-"+doc.product.toString();
+    cur_frm.add_fetch('product','price','product_price');
+    refresh_field('product_price');
+}
+
+
+
+
+
+
+frappeapplication19
+
+Manish@25
+
+
+
+
+
+
+
+Select C.buyer, C.price, C.quantity, C.total, SP.store, I.product_name, I.brand, I.category, I.price from `tabInventory` as I ,`tabCart` as C , `tabStore Product` as SP where C.buyer="darshgmailcom" and C.store_product = SP.name and SP.product = I.name; 
+order by I.category; 
+
+Select 'tabCart.buyer', 'tabCart.price', 'tabCart.quantity', 'tabCart.total', 'tabStore Product.store', 'tabInventory.product_name', 'tabInventory.brand', 'tabInventory.category', 'tabInventory.price from `tabInventory` ,`tabCart` , `tabStore Product` where 'tabCart.buyer'='darshgmailcom' and 'tabCart.store_product'='tabStore Product.name' and 'tabStore Product.product'='tabInventory.name' order by 'tabInventory.category'; 
+
+Select * from `tabCart` , `tabStore Product` where 'tabCart.buyer'='darshgmailcom' and 'tabCart.store_product'='tabStore Product.name';
+
+Select count(I.product_name) as cat_count from `tabInventory` as I ,`tabCart` as C , `tabStore Product` as SP where C.buyer="darshgmailcom" and C.store_product = SP.name and SP.product = I.name group by I.category order by I.category"
+
+Select count(I.product_name),C.buyer, C.price as offer_price, C.quantity, C.total, SP.store, I.product_name, I.brand, I.category, I.price from `tabInventory` as I ,`tabCart` as C , `tabStore Product` as SP where C.buyer="darshgmailcom" and C.store_product = SP.name and SP.product = I.name group by I.category order by I.category;
+
+
+def validate(self):
+        self.item_price = frappe.db.get_value("Store Product",{"name":self.store_product},"price")
+        self.item_total = round((int(self.quantity) * float(self.item_price)),2)
+
+
+
+
+
+{% set cart_item = frappe.get_list("Cart Items",filters={"parent":order_id,"products":product.get('id')[0].ge
+t('name')},fields=["name","quantity"]) %}
+                        {% if cart_item %}
+                        <div class='cart-added'>{{ cart_item.quantity }} In Cart</div>
+
+
+import frappe
+def get_context(context):
+    if not (frappe.form_dict.buyer ):
+                return {
+                        "body": """<h1>Error</h1>
+                                <p>Parameters doctype and name required</p>
+                                <pre>%s</pre>""" % repr(frappe.form_dict)
+                }
+    if frappe.form_dict.buyer:
+        buyer = frappe.form_dict.buyer
+        context['result'] = frappe.db.sql(""" Select C.buyer, C.price as offer_price, C.quantity, C.total, SP.store, I.pr
+oduct_name, I.brand, I.category, I.price from `tabInventory` as I ,`tabCart` as C , `tabStore Product` as SP where C.buye
+r=buyer and C.store_product = SP.name and SP.product = I.name order by I.category """, as_dict=True)
+        sum =0
+        for j in context['result']:
+            sum+= int(j.get('total'))
+        context.sum =sum
+        cat_count = frappe.db.sql("""Select count(I.product_name) as category_count from `tabInventory` as I ,`tabCart` a
+s C , `tabStore Product` as SP where C.buyer="darshgmailcom" and C.store_product = SP.name and SP.product = I.name group 
+by I.category order by I.category""",as_dict=True)
+        context['count'] = []
+        for i in cat_count:
+            context['count'].append(i.get('category_count'))
+        context.order_doc = frappe.db.sql("""select name from `tabOrder` where buyer='darshgmailcom' and status='In Cart'
+ """,as_dict=True)
+
+
+
+{{ cart.get('product')[0].get('category') }}
+{{ cart.get('product')[0].get('category') }}
+
+
+
+
+{% for cart in cart_items %}
+        {% if (loop.previtem and loop.previtem.get('product')[0].get('category') != cart.get('product')[0].get('category') ) or loop.
+index == 1 %}
+                        <h4 class="ui-grid-head">
+                                <a href="#">{{ cart.('product')[0].get('category') }}</a>
+                        </h4>
+                {% endif %}
+                <div class="row-cart" >
+                        <ul class="ul-griditems-details">
+                                <li></li>
+                                <li class="li-griditems-details">
+                                        <a class="li-title" href="#">{{ cart.('product')[0].get('brand') }}</a>
+                                        <a class="li-items-title">{{ cart.('product')[0].get('product_name') }}</a>
+                                </li>
+                                <li>
+                                        <span class="li-unit-price">
+                                                <span class="WebRupee">Rs. </span>
+                                                <input hidden id="cart-rate" value="27">{{ cart.('product')[0].get('item_price') }}
+                                        </span>
+   {% endfor %}
+

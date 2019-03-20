@@ -1,0 +1,55 @@
+2018-12-10 13:07:07,248 INFO getting app erpnext
+2018-12-10 13:07:07,252 INFO git clone https://github.com/frappe/erpnext --branch develop --depth 1 --origin upstream
+2018-12-10 13:07:13,691 INFO installing erpnext
+2018-12-10 13:07:13,691 INFO ./env/bin/pip install -q  -e ./apps/erpnext --no-cache-dir
+2018-12-10 13:07:40,894 INFO getting app foundation
+2018-12-10 13:07:40,899 INFO git clone https://github.com/erpnext/foundation --branch master --depth 1 --origin upstream
+2018-12-10 13:07:55,373 INFO installing foundation
+2018-12-10 13:07:55,374 INFO ./env/bin/pip install -q  -e ./apps/foundation --no-cache-dir
+2018-12-10 13:13:31,852 INFO creating new app library
+2018-12-10 13:14:12,173 INFO installing library
+2018-12-10 13:14:12,173 INFO ./env/bin/pip install -q  -e ./apps/library --no-cache-dir
+2018-12-10 13:19:35,191 INFO ./env/bin/pip install --upgrade pip
+2018-12-10 13:19:36,293 INFO ./env/bin/pip install -q -r /home/babitagujar/.bench/requirements.txt
+2018-12-10 13:19:38,591 INFO ./env/bin/pip install -q -r ./apps/frappe/requirements.txt
+2018-12-10 13:19:39,668 INFO ./env/bin/pip install -q -r ./apps/erpnext/requirements.txt
+2018-12-10 13:19:40,731 INFO ./env/bin/pip install -q -r ./apps/foundation/requirements.txt
+2018-12-10 13:19:41,777 INFO ./env/bin/pip install -q -r ./apps/frappe_io/requirements.txt
+2018-12-10 13:19:42,810 INFO ./env/bin/pip install -q -r ./apps/library/requirements.txt
+2018-12-10 13:19:43,859 INFO yarn install
+2018-12-11 07:59:27,792 INFO npm install yarn
+2018-12-11 08:13:56,093 INFO npm install yarn
+2018-12-11 08:16:17,802 INFO npm install yarn
+2018-12-11 09:48:59,246 INFO npm install yarn
+2018-12-11 09:56:29,133 INFO npm install yarn
+2018-12-11 10:03:06,673 INFO npm install yarn
+2018-12-11 10:05:56,264 INFO npm install yarn
+2018-12-11 10:16:19,535 INFO ./env/bin/pip install --upgrade pip
+2018-12-11 10:16:21,352 INFO ./env/bin/pip install -q -r /home/babitagujar/.bench/requirements.txt
+2018-12-11 10:16:22,324 INFO ./env/bin/pip install -q -r ./apps/frappe/requirements.txt
+2018-12-11 10:16:23,413 INFO ./env/bin/pip install -q -r ./apps/erpnext/requirements.txt
+2018-12-11 10:16:24,508 INFO ./env/bin/pip install -q -r ./apps/foundation/requirements.txt
+2018-12-11 10:16:25,564 INFO ./env/bin/pip install -q -r ./apps/frappe_io/requirements.txt
+2018-12-11 10:16:26,621 INFO ./env/bin/pip install -q -r ./apps/library/requirements.txt
+2018-12-11 10:16:27,682 INFO yarn install
+2018-12-11 13:26:14,267 INFO npm install yarn
+2018-12-18 05:26:15,353 INFO creating new app ekart
+2018-12-18 05:26:57,850 INFO installing ekart
+2018-12-18 05:26:57,850 INFO ./env/bin/pip install -q  -e ./apps/ekart --no-cache-dir
+2018-12-26 03:59:24,379 INFO npm install yarn
+2018-12-26 05:38:35,675 INFO npm install yarn
+2018-12-26 05:41:52,128 INFO ./env/bin/pip install --upgrade pip
+2018-12-26 05:41:53,750 INFO ./env/bin/pip install -q -r /home/babitagujar/.bench/requirements.txt
+2018-12-26 05:41:54,678 INFO ./env/bin/pip install -q -r ./apps/frappe/requirements.txt
+2018-12-26 05:41:55,745 INFO ./env/bin/pip install -q -r ./apps/erpnext/requirements.txt
+2018-12-26 05:41:56,810 INFO ./env/bin/pip install -q -r ./apps/foundation/requirements.txt
+2018-12-26 05:41:57,877 INFO ./env/bin/pip install -q -r ./apps/frappe_io/requirements.txt
+2018-12-26 05:41:58,974 INFO ./env/bin/pip install -q -r ./apps/library/requirements.txt
+2018-12-26 05:42:00,028 INFO ./env/bin/pip install -q -r ./apps/ekart/requirements.txt
+2018-12-26 05:42:01,100 INFO yarn install
+2018-12-26 05:42:28,870 INFO npm install yarn
+2019-01-24 04:13:26,966 INFO npm install yarn
+2019-02-14 09:53:12,951 INFO getting app paypal_integration
+2019-02-14 09:53:12,960 INFO git clone https://github.com/frappe/paypal_integration  --depth 1 --origin upstream
+2019-02-14 09:53:13,679 INFO installing paypal_integration
+2019-02-14 09:53:13,679 INFO ./env/bin/pip install -q  -e ./apps/paypal_integration --no-cache-dir
